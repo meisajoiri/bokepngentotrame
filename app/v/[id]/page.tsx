@@ -153,7 +153,7 @@ export default async function Video({ params }: PageProps) {
         {/* ... */}
         </section>
             <iframe
-                className="w-full h-[90vh] md:h-[70vh] lg:h-[70vh]"
+                className="w-full h-[80vh] md:h-[80vh] lg:h-[80vh]"
                 src={`https://doodstream.com/e/${file.filecode}`}
                 scrolling="no"
                 title={file.title}
