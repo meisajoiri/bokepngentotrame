@@ -58,11 +58,11 @@ export async function generateMetadata(
             title,
             description,
             images: [...previousOgImages, image],
-            url: `/v/${file.filecode}#${file.title}`,
+            url: `/v/${file.filecode}`,
             type: `article`,
         },
         alternates: {
-            canonical: `/v/${file.filecode}#${file.title}`,
+            canonical: `/v/${file.filecode}`,
         },
     };
 }
@@ -88,7 +88,7 @@ export default async function Video({ params }: PageProps) {
         headline: `${file.title}`,
         image: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma`,
-        url: `https://bokepngentotrame.pages.dev/v/${file.filecode}#${file.title}`,
+        url: `https://bokepngentotrame.pages.dev/v/${file.filecode}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
@@ -108,7 +108,7 @@ export default async function Video({ params }: PageProps) {
         headline: `${file.title}`,
         image: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Xpanas Bocil Ngentot Jilbab Smp Mama Sma`,
-        url: `https://bokepngentotrame.pages.dev/v/${file.filecode}#${file.title}`,
+        url: `https://bokepngentotrame.pages.dev/v/${file.filecode}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
@@ -125,7 +125,7 @@ export default async function Video({ params }: PageProps) {
                 userInteractionCount: `${file.views}`,
             interactionType: {
                 '@type': `ReadAction`,
-                target: `https://bokepngentotrame.pages.dev/v/${file.filecode}#${file.title}`
+                target: `https://bokepngentotrame.pages.dev/v/${file.filecode}`
             }  
         }
         }
